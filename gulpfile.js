@@ -6,3 +6,8 @@ gulp.task('jsx', function() {
     .pipe( react() )
     .pipe( gulp.dest('components'))
 });
+gulp.task('jsx', function() {
+  return gulp.src(['js/layout/navigation_bar.jsx', 'js/layout/logo.jsx'])
+    .pipe( react() )
+    .pipe( gulp.dest('components/layout'))
+});

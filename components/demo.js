@@ -1,8 +1,6 @@
 // This file is required by the index.html file and will
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
-var React = require('react');
-var ReactDOM = require('react-dom');
 var Nhat = React.createClass({displayName: "Nhat",
   getPay(){
     this.state.money = parseInt(this.state.money) + 1;

@@ -3,20 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
-    <!-- <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script> -->
+    <style>
+      @import url('css/style.css');
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <div id='navigation'></div>
     <!-- All of the Node.js APIs are available in this renderer process. -->
     We are using Node.js <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
-    <div id="root"></div>
+    <!-- <div id="root"></div> -->
   </body>
 
   <script>
+    var React = require('react');
+    var ReactDOM = require('react-dom');
     // You can also require other files to run in this process
     require('./renderer.js')
-    require('./components/demo.js')
+    require('./components/layout/navigation_bar.js')
+    // require('./components/demo.js')
   </script>
 </html>
